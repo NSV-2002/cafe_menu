@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PDF Viewer</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      background: #f3f3f3;
     }
     iframe {
-      width: 100vw;
+      width: 100%;
       height: 100vh;
       border: none;
     }
@@ -18,8 +19,10 @@
 </head>
 <body>
 
-  <!-- Replace sample.pdf with your file -->
-  <iframe src="sample.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
+  <!-- Google Docs Viewer works 100% on GitHub Pages + Mobile -->
+  <iframe 
+      src="https://docs.google.com/gview?embedded=true&url=https://nsv-2002.github.io/cafe_menu/sample.pdf">
+  </iframe>
 
 </body>
 </html>
